@@ -19,7 +19,7 @@ load_dotenv()
 SENDGRID_API_KEY = os.getenv("SENDGRID_API_KEY")
 FROM_EMAIL       = os.getenv("FROM_EMAIL")
 FROM_NAME        = os.getenv("FROM_NAME")
-DEMO_MODE        = False
+DEMO_MODE        = os.getenv("DEMO_MODE", "False") == "True"
 
 def run_abandoned_cart_check():
     """
