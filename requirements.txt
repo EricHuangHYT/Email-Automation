@@ -1,0 +1,3 @@
+schedule
+sendgrid
+python-dotenv
